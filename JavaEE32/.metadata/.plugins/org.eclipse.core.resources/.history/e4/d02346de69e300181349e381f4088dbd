@@ -1,0 +1,20 @@
+package cn.e3mall.pagehelper;
+
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.alibaba.dubbo.config.ApplicationConfig;
+
+public class PageHelperTest {
+
+	public void testPageHelper()throws Exception{
+		//初始化spring容器
+		ApplicationConfig applicationConfig = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-dao.xml");
+		//从容器获得mapper代理对象
+		
+		//执行sql语句之前设置分页信息使用pgeHelper的startPage方法
+		//执行查询
+		//取分页信息，PageInfo。总记录数 总页数 当前页码 
+		
+	}
+}
